@@ -5,7 +5,7 @@ import { Country } from '../interfaces/country';
 
 @Injectable({providedIn: 'root'})
 export class CountriesService {
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   private getCountriesrequest(url:string):Observable<Country[]>{
     return this.http.get<Country[]>(url)
