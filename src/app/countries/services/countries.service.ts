@@ -8,7 +8,7 @@ import { Region } from '../interfaces/region.type';
 @Injectable({providedIn: 'root'})
 export class CountriesService {
   constructor(private http: HttpClient) {
-    this.loadToLocalStorage()
+    this.loadToLocalStorage();
   }
 
   private getCountriesrequest(url:string):Observable<Country[]>{
